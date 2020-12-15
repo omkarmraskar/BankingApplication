@@ -55,20 +55,20 @@ class BankAccount {
 
         System.out.println("Welcome "+customerName);
         System.out.println("Your ID is "+customerId);
-        System.out.println("\n");
-        System.out.println("A. Check balance");
-        System.out.println("B. Deposit");
-        System.out.println("C. Withdraw");
-        System.out.println("D. Previous Transaction");
-        System.out.println("E. Exit");
-
+        System.out.println(" ");
+        
         do{
+            System.out.println("A. Check balance");
+            System.out.println("B. Deposit");
+            System.out.println("C. Withdraw");
+            System.out.println("D. Previous Transaction");
+            System.out.println("E. Exit");
             System.out.println("=====================================================================");
             System.out.println("Enter an option");
             System.out.println("=====================================================================");
-            System.out.println("\n");
+            System.out.println("");
             option = scanner.next().charAt(0);
-            System.out.println("\n");
+            System.out.println(" ");
 
             switch(option){
 
@@ -76,7 +76,7 @@ class BankAccount {
                 System.out.println("------------------------------------------------------");
                 System.out.println("Balance = "+balance);
                 System.out.println("------------------------------------------------------");
-                System.out.println("\n");
+                System.out.println(" ");
                 break;
 
             case 'B':
@@ -85,7 +85,7 @@ class BankAccount {
                 System.out.println("------------------------------------------------------");
                 int amount = scanner.nextInt();
                 deposit(amount);
-                System.out.println("\n");
+                System.out.println(" ");
                 break;
 
             case 'C':
@@ -94,14 +94,14 @@ class BankAccount {
                 System.out.println("------------------------------------------------------");
                 int amount2 = scanner.nextInt();
                 withdraw(amount2);
-                System.out.println("\n");
+                System.out.println(" ");
                 break;
 
             case 'D':
                 System.out.println("------------------------------------------------------");
                 getPreviousTransaction();
                 System.out.println("------------------------------------------------------");
-                System.out.println("\n");
+                System.out.println(" ");
                 break;
 
             case 'E':
